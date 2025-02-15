@@ -3,7 +3,7 @@
 // Функция для загрузки JSON-файла
 async function loadTranslations(lang) {
   try {
-    const response = await fetch(`assets/js/${lang}.json`);
+    const response = await fetch(`js/${lang}.json`);
     if (!response.ok) {
       throw new Error(`Ошибка загрузки языка: ${response.statusText}`);
     }
